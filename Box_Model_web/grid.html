@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            #grid
+            {
+                border : 5px solid pink;
+                display:grid; /*display : 블록과 인라인 요소 중 어느 쪽으로 처리할지, 플로우,그리드, 플렉스 처럼 자식 요소를 어떻게 배치할지 등 레이아웃을 설정함*/
+                grid-template-columns : 150px 1fr; /* NAVIGATION은 150px이라는 가로폭의 Size 를 가짐. 1fr은 남은 공간을 분할하는 비율 */
+            }
+            div{
+                border : 5px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <!--두개의  Tag를 나란히 혹은 수직으로 배치를 하고 싶으면, 그것을 감싸는 이중의 div tag가 필요함. -->
+        <div id = "grid">
+            <div>NAVIGATION</div>
+            <div>ARTICLE</div>
+        </div>
+
+
+        <!--
+    <h1>NAVIGATION</h1>ARTICLE
+    <div>NAVIGATION</div>  div tag : 웹페이지의 논리적 구분을 정의함. 줄바꿈이 됨.
+    <div>ARTICLE</div> span tag : inline 속성 tag. div와의 차이 : 줄바꿈이 되지 않음-->
+</body>
+</html>
