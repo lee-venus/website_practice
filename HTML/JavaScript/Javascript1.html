@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title></title>
+    </head>
+    <body>
+        <input type = "button" value = "hi" onclick = "alert('fuck you')"> <!--button : 화면에 버튼 생성. value  :값. onclick : 클릭을 했을때의 반응. alert : 경고창 생성. onclick은 JS로만 동작함-->
+        <input type = "text" onchange ="alert('fuckfuck')">
+        <input  type = "text" onkeydown = "alert('key down ! ')">
+
+
+        <h1>WEB</h1>
+
+        <input type = "button" value = "night" onclick = "
+        document.querySelector('body').style.backgroundColor = 'black'/*body Tag에 대한 선택자. 배경색깔 변경*/
+        document.querySelector('body').style.color = 'white'/*body Tag에 대한 선택자. 글색깔 변경*/
+        ">
+        <input type = "button" value = "day" onclick = "
+        document.querySelector('body').style.backgroundColor = 'white'
+        document.querySelector('body').style.color = 'black'">
+
+        <input type= "button" value = "black" onclick = "
+        if(document.queryselector('body').dataset.mode ==='day'){
+            document.queryselector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('body').dataset.mode = 'night'
+            this.value =  'day';
+        } else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            docukment.queryselector('body').style.color = 'black';
+            document.queryselector('body').dataset.mode = 'day'
+            this.value = 'night'
+
+        }">
+
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ol>
+        
+        <h2>
+            JAVASCRIPT
+        </h2>
+
+        <p>
+            JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+        </p>
+    </body>
+</html>

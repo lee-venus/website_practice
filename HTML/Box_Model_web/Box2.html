@@ -10,10 +10,7 @@
         #active {
             color:red;
         }
-        .saw
-        {    
-            color:gray;
-        }
+
         a {
             color:black;
             text-decoration : none;
@@ -36,6 +33,22 @@
             display:grid;
             grid-template-columns : 150px 1fr;
         }
+
+        #grid ol /* ol tag 중 부모가 grid id를 가진 tag 에 대해서만 해당함.*/
+        {
+            padding-left : 5px;
+        }
+
+        @media (max-width : 800px){
+         #grid
+        {
+            display:block;
+        }
+        ol{
+            border-right : none;
+        }
+        }
+
 
     </style>
 </head>
